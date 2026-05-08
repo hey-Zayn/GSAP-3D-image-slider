@@ -1,0 +1,11 @@
+{
+  "images": [
+    { "id": 1, "url": "./images/img-1.jpg", "title": "Mountain View" },
+    { "id": 2, "url": "./images/img-1.jpg", "title": "Ocean Breeze" },
+    { "id": 3, "url": "./images/img-1.jpg", "title": "City Lights" },
+    { "id": 4, "url": "./images/img-1.jpg", "title": "Forest Path" },
+    { "id": 5, "url": "./images/img-1.jpg", "title": "Desert Sands" },
+    { "id": 6, "url": "./images/img-1.jpg", "title": "Arctic Chill" },
+    { "id": 7, "url": "./images/img-1.jpg", "title": "Sunset Glow" }
+  ]
+}
