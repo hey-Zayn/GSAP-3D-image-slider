@@ -67,24 +67,21 @@ const Slider = () => {
     
     tunnelRef.current.appendChild(fragment);
 
-    // 3. Scroll Listeners (Modified to only allow scrolling "Up" / Away)
+    // 3. Scroll Listeners
     const handleWheel = (e) => {
-      // Only allow scrolling away (deltaY < 0 or just restrict the result)
-      // Actually, standard scroll down (deltaY > 0) usually moves forward.
-      // We will only allow negative updates to targetScroll to move images away.
+      // Respecting "remove scroll down" - only allow moving away from camera
       if (e.deltaY > 0) {
         targetScrollRef.current -= e.deltaY * CONFIG.scrollSpeed;
-      } else {
-        // Prevent moving forward if it feels buggy
-        // targetScrollRef.current += Math.abs(e.deltaY) * CONFIG.scrollSpeed;
       }
     };
 
     const handleKeyDown = (e) => {
+      // Keeping both arrows as requested
       if (e.key === "ArrowUp") {
         targetScrollRef.current -= CONFIG.buttonScrollAmount;
+      } else if (e.key === "ArrowDown") {
+        targetScrollRef.current += CONFIG.buttonScrollAmount;
       }
-      // ArrowDown removed as per request
     };
 
     window.addEventListener("wheel", handleWheel);
@@ -129,8 +126,6 @@ const Slider = () => {
       gsap.ticker.remove(tickerFunc);
     };
   }, []);
-
-  const scrollUp = () => targetScrollRef.current -= CONFIG.buttonScrollAmount;
 
   return (
     <section className="spotlight" ref={spotlightRef} style={styles.spotlight}>

@@ -1,11 +1,22 @@
 {
   "images": [
-    { "id": 1, "url": "./images/img-1.jpg", "title": "Mountain View" },
-    { "id": 2, "url": "./images/img-1.jpg", "title": "Ocean Breeze" },
-    { "id": 3, "url": "./images/img-1.jpg", "title": "City Lights" },
-    { "id": 4, "url": "./images/img-1.jpg", "title": "Forest Path" },
-    { "id": 5, "url": "./images/img-1.jpg", "title": "Desert Sands" },
-    { "id": 6, "url": "./images/img-1.jpg", "title": "Arctic Chill" },
-    { "id": 7, "url": "./images/img-1.jpg", "title": "Sunset Glow" }
+    { "id": 1, "url": "./images/img-24.jpg", "title": "Image 3" },
+    { "id": 2, "url": "./images/img-4.jpg", "title": "Image 4" },
+    { "id": 3, "url": "./images/img-5.jpg", "title": "Image 5" },
+    { "id": 4, "url": "./images/img-6.jpg", "title": "Image 6" },
+    { "id": 5, "url": "./images/img-7.jpg", "title": "Image 7" },
+    { "id": 6, "url": "./images/img-8.jpg", "title": "Image 8" },
+    { "id": 7, "url": "./images/img-10.jpg", "title": "Image 10" },
+    { "id": 8, "url": "./images/img-11.jpg", "title": "Image 11" },
+    { "id": 9, "url": "./images/img-13.jpg", "title": "Image 13" },
+    { "id": 10, "url": "./images/img-14.jpg", "title": "Image 14" },
+    { "id": 11, "url": "./images/img-15.jpg", "title": "Image 15" },
+    { "id": 12, "url": "./images/img-17.jpg", "title": "Image 17" },
+    { "id": 13, "url": "./images/img-19.jpg", "title": "Image 19" },
+    { "id": 14, "url": "./images/img-20.jpg", "title": "Image 20" },
+    { "id": 15, "url": "./images/img-21.jpg", "title": "Image 21" },
+    { "id": 16, "url": "./images/img-22.jpg", "title": "Image 22" },
+    { "id": 17, "url": "./images/img-23.jpg", "title": "Image 23" },
+    { "id": 18, "url": "./images/img-24.jpg", "title": "Image 24" }
   ]
 }

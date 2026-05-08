@@ -1,13 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-outfit: "Outfit", sans-serif;
+  --font-archivo: "Archivo", sans-serif;
+  --font-alegreya: "Alegreya", serif;
 }
 
 @layer base {
   body {
     @apply m-0 p-0 box-border w-screen h-screen overflow-hidden bg-black text-white font-outfit;
+  }
+  
+  nav {
+    @apply font-archivo;
+  }
+  .outfit{
+    font-family: var(--font-outfit);
+  }
+  .archivo{
+    font-family: var(--font-archivo);
+  }
+  .alegreya{
+    font-family: var(--font-alegreya);
   }
 }
 
@@ -25,8 +42,6 @@
   overflow: hidden;
   will-change: transform, opacity; 
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  /* REMOVED TRANSITIONS: GSAP handles all animations frame-by-frame. 
-     Transitions cause flickering during the infinite loop wrap. */
 }
 
 .item img {
